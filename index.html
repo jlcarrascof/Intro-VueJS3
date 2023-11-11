@@ -15,11 +15,10 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <img :src="image" alt="socks" />
+            <img v-bind:src="image">
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
-            Available in <a :href="url">My Shop</a>
           </div>
         </div>
       </div>
@@ -32,5 +31,6 @@
     <script>
       const mountedApp = app.mount('#app')
     </script>
+
   </body>
 </html>
