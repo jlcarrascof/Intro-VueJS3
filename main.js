@@ -1,1 +1,7 @@
-const product = 'Socks'
+const App = Vue.createApp({ 
+    data: function() { 
+        return { 
+            product: 'Socks',
+        }
+    }
+});
